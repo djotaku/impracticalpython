@@ -2,7 +2,8 @@
  
 def main():
     word = input("Give me a word! ")
-    if word[0].lower() == "a" or word[0].lower() == "e" or word[0].lower() == "i" or word[0].lower() == "o" or word[0].lower() == "u":
+    vowels = ['a','e','i','o','u']
+    if word[0].lower() in vowels:
         print("vowel")
          
 if __name__ == "__main__":

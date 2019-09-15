@@ -5,6 +5,8 @@ def main():
     vowels = ['a','e','i','o','u']
     if word[0].lower() in vowels:
         print(f"\n\nPig latin: {word}way")
+    else:
+        print(f"{word[1:]}{word[0]}ay")
          
 if __name__ == "__main__":
     main()

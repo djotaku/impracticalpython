@@ -1,9 +1,9 @@
-"""Generate funny names (a la TV show Psych) by randomly combining names fomr 2 separate lists"""
+"""Generate funny names (a la TV show Psych) by randomly combining names fomr 2 separate lists."""
 import sys
 import random
 
 def main():
-    """ Chooose names at random from 2 tuples of names and print to screen """
+    """Chooose names at random from 2 tuples of names and print to screen."""
     print("Welcome to the Psych 'Sidekick Name Picker'\n")
     print("A name just like Sean would pick for Gus:\n\n")
 

@@ -6,12 +6,12 @@ def main():
     """Run the code to create the bar chart"""
     sentence = input("Give me a sentence to analyze: ")
     pp = pprint.PrettyPrinter(indent=4)
-    d = defaultdict(int)
+    d = defaultdict(list)
     for letter in sentence.lower():
         if letter == " ":
             pass
         else:
-            d[letter] += 1
+            d[letter].append(letter)
     pp.pprint(d)
 
 if __name__ == "__main__":

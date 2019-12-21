@@ -1,6 +1,6 @@
 import cProfile
-import palingrams
-cProfile.run('palingrams.find_palingrams()')
+import palingrams_optimized
+cProfile.run('palingrams_optimized.find_palingrams()')
 
 # note from book: 
 # The most common way to run cProfile is directly in the interpreter.

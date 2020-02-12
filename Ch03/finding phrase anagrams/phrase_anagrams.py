@@ -58,13 +58,12 @@ def main():
     running = True
     
     while running:
-        temp_phrase = phrase.replace('','')
+        temp_phrase = phrase.replace(' ','')
         if len(temp_phrase) < limit:
             print(f"Length of anagram phrase = {len(temp_phrase)}")
             
             find_anagrams(name, dict_file)
-            print("Current anagram phrase =", end=" ")
-            print(phrase, file=sys.stderr)
+            print(f"Current anagram phrase = {phrase}")
             
             choice, name = process_choice(name)
             phrase += choice + ' '

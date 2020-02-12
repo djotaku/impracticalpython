@@ -23,4 +23,4 @@ print()
 if len(anagram_list) == 0:
     print("You need a larger dictionary or a new name!")
 else:
-    print("Anagrams =", *anagram_list, sep='\n')
+    print("Anagrams =", *anagram_list, sep='\n') # a reminder that the splat allows for printing each member of a list

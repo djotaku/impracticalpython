@@ -1,0 +1,3 @@
+- pylint and pydocstyle - making sure code follows PEP8 for coding style and that documentation follows its guide (PEP257).
+- first use of pprint module (see: https://docs.python.org/3/library/pprint.html?highlight=pprint#module-pprint)
+- introduction to collections.defaultdict - this can use a factory to allow appending to lists that weren't already there. (see: https://docs.python.org/3/library/collections.html#defaultdict-examples) Reviewing this before the 2020 Advent of Code challenge would have made life a lot easier for me when appending to dictionary keys that didn't already have a list.

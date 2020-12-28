@@ -27,7 +27,7 @@ for k in key_int:
         col_items = cipherlist[start:stop]
     elif k > 0: # reading top-to-bottom of column
         col_items = list((reversed(cipherlist[start:stop])))
-    translation_matrix[abs(k) - 1] col_items
+    translation_matrix[abs(k) - 1] = col_items
     start += ROWS
     stop += ROWS
     

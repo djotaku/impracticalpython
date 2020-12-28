@@ -31,14 +31,14 @@ for k in key_int:
     start += ROWS
     stop += ROWS
     
-    print(f'\n{ciphertext=}')
-    print('\ntranslation matrix =,, *translation_matrix, sep="\n"')
-    print(f'\nnkey length = {len(key_int)}')
+print(f'\n{ciphertext=}')
+print('\ntranslation matrix =', *translation_matrix, sep="\n")
+print(f'\nnkey length = {len(key_int)}')
     
-    # loop through nested lists popping off last item to new list:
-    for i in range(ROWS):  # just learned in the Python Morsels I did today that this assumes a start of 0 and a step of 1
-        for col_items in translation_matrix:
-            word = str(col_items.pop())
-            plaintext += word + ' '
+# loop through nested lists popping off last item to new list:
+for i in range(ROWS):  # just learned in the Python Morsels I did today that this assumes a start of 0 and a step of 1
+    for col_items in translation_matrix:
+        word = str(col_items.pop())
+        plaintext += word + ' '
     
-    print(f'{plaintext=}')
+print(f'{plaintext=}')

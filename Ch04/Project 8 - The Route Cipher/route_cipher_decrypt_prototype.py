@@ -5,7 +5,7 @@ ciphertext = "16 12 8 4 0 1 5 9 13 17 18 14 10 6 2 3 7 11 15 19"
 
 # split elements into words, not letters
 
-cipherlist = list(cipertext.split()) # doesn't split return a list already? Isn't this redundant? Maybe it used to work differently? -ERM
+cipherlist = list(ciphertext.split()) # doesn't split return a list already? Isn't this redundant? Maybe it used to work differently? -ERM
 
 # initialize variables
 COLS = 4

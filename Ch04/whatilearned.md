@@ -15,3 +15,4 @@ iterable[::2]  # would get every other item starting with 0
 iterable[1::2] # gets every other item starting with 1
 ```
 - itertools.zip_longest() allows you to zip (or combine) two iterators of unequal length. It just appends None where the shorter string falls short.
+- once again practiced with collections.Counter to count up letters in the cipher types practice problem so that I could see which were the most common letters in each cipher.

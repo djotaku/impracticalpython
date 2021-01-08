@@ -14,11 +14,18 @@ def solve_null_cipher(message, nth):
     message = null cipher text as a string stripped of whitespace
     nth = the nth letter of the nth word to check
     """
-    plaintext = ''
-    for count, word in enumerate(message):
-        if (count-1) % nth == 0:
-            plaintext += word[nth-1]
-    print(plaintext)
+    for i in range(1, nth + 1):
+        print(f"Using increment letter {nth} of word {nth}")
+        print()
+        count = i - 1
+        location = i - 1
+        for index, word in enumerate(message):
+            if index == count:
+                if location < len(word):
+                    print(f"letter = {word[location]}")
+                    count += i
+                else:
+                    print("interval doesn't work", file=sys.stderr)
 
 
 def main():

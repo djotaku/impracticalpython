@@ -30,7 +30,7 @@ for i in range(num_runs):
         pick_change_wins += 1
         
 print(f"Wins with original pick = {first_choice_wins}")
-print(f"Wins with cnanged pick = {pick_change_wins}")
+print(f"Wins with changed pick = {pick_change_wins}")
 print(f"Probability of winning with initial guess: {first_choice_wins/num_runs:.2f}")
 print(f"Probability of winning by switching: {pick_change_wins/num_runs:.2f}")
 
